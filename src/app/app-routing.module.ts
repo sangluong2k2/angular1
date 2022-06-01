@@ -4,9 +4,12 @@ import { AddProductComponent } from './components/products/add-product/add-produ
 import { DetailProductComponent } from './components/products/detail-product/detail-product.component';
 import { EditProductComponent } from './components/products/edit-product/edit-product.component';
 import { ProductComponent } from './components/products/product/product.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { SignupComponent } from './components/signup/signup.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
 import { WebsiteLayoutComponent } from './layouts/website-layout/website-layout.component';
+import { UserGuard } from './services/guards/user.guard';
 
 
 
@@ -15,13 +18,16 @@ const routes: Routes = [
   { path: "", component:WebsiteLayoutComponent },
   {
     path: "admin", component: AdminLayoutComponent,  children: [
-      {path: "product", component: ProductComponent},
-      { path: ":id", component: DetailProductComponent },
-      { path: ":id/edit", component: EditProductComponent },
-      { path: "add", component: AddProductComponent },
+      {path: "product",canActivate:[UserGuard], component: ProductComponent, children:[
+        { path: "add", component: AddProductComponent },
+        { path: ":id", component: DetailProductComponent },
+        { path: ":id/edit", component: EditProductComponent },
+      ]},
      
     ]
   },
+  {path: "signup", component: SignupComponent},
+  {path: "signin", component: SigninComponent},
 
 ];
 

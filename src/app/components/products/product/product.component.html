@@ -20,7 +20,7 @@
           <td>
           <a routerLink="{{product.id}}">Detail</a> | 
           <a routerLink="{{product.id}}/edit">edit</a>
-          <button (click)="onRemoveProduct(product.id)" >Xóa</button>
+          <button (click)="onRemoveProduct(product.id!)" >Xóa</button>
           </td>
          
   
@@ -28,5 +28,4 @@
       </tbody>
     </table>
   </div>
-<app-add-product></app-add-product>
 <router-outlet></router-outlet>

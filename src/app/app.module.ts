@@ -11,6 +11,8 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { WebsiteLayoutComponent } from './layouts/website-layout/website-layout.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './components/signup/signup.component';
+import { SigninComponent } from './components/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HttpClientModule } from '@angular/common/http';
     DetailProductComponent,
     ProductComponent,
     AdminLayoutComponent,
-    WebsiteLayoutComponent
+    WebsiteLayoutComponent,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,

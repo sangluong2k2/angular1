@@ -37,5 +37,24 @@
       "status": false
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "sang2002@gmail.com",
+      "password": "$2a$10$i4OkVYaQLeSzCPPcW70qzOHkUD4Z8VKXREltTXCLZ5Vbmc72FKiG6",
+      "name": "sang",
+      "id": 1
+    },
+    {
+      "email": "nhatngu@gmail.com",
+      "password": "$2a$10$hYMK5Uzsw9gxch46sAf.WOBtCi9B8GJFpIO10JNAcnEuRmRMYumi.",
+      "name": "Nhat db",
+      "id": 2
+    },
+    {
+      "email": "thanhngu@gmail.com",
+      "password": "$2a$10$H0O5kFJ9jqx5M/h9nxk0/..dWDSuI11k4K3WFDtmMKboMYSGQDUaC",
+      "name": "thanhngu",
+      "id": 3
+    }
+  ]
 }
