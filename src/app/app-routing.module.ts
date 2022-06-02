@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: "", component:WebsiteLayoutComponent },
   {
     path: "admin", component: AdminLayoutComponent,  children: [
-      {path: "product",canActivate:[UserGuard], component: ProductComponent, children:[
+      {path: "product", component: ProductComponent, children:[
         { path: "add", component: AddProductComponent },
         { path: ":id", component: DetailProductComponent },
         { path: ":id/edit", component: EditProductComponent },

@@ -55,6 +55,12 @@
       "password": "$2a$10$H0O5kFJ9jqx5M/h9nxk0/..dWDSuI11k4K3WFDtmMKboMYSGQDUaC",
       "name": "thanhngu",
       "id": 3
+    },
+    {
+      "email": "tuanlon@gmail.com",
+      "password": "$2a$10$TwjtHHDKWeULrxmYQzh1Y.2Av/f8EHH8Ki22168AMYcuC1DaV.uOq",
+      "name": "tuanlon",
+      "id": 4
     }
   ]
 }
